@@ -28,11 +28,41 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* 
+fix fonts pls. below does not work but font-size works
+*/
+
+:root {
+    font-family: 'HankenGrotesk', sans-serif;
+}
+
+.about {
+    background-color: antiquewhite;
+    padding: 1rem 1rem 1rem 1rem; 
+    overflow: hidden;
+}
+
+.about-flex {
+    display:flex;
+    padding: 5rem 0rem 5rem 0rem;
+    background-color:whitesmoke; /* ----- temporary -----  */
+}
+
+.about-text { /* flex child 1*/
+    padding: 2rem;
+    flex: 1; /* flex ratio comparitively */
+}
+
+.about-text h1 {
+    color:darkslategray;
+    font-size: 4rem;
+    padding: 0rem;
+}
+
+.about-model { /* flex child 2 */
+    background-color: pink;
+    padding: 2rem;
+    flex: 1;
 }
