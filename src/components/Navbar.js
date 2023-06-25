@@ -4,8 +4,16 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <div>
-            
+        <div className="navbar">
+            <ul className="menu">
+
+                
+                <li><a className="nav1" href="#">About</a></li>
+                <li><a className="nav2" href="#">Projects</a></li>
+                <li><a className="nav3" href="#">Contact</a></li>
+                
+
+            </ul>
         </div>
     );
 }

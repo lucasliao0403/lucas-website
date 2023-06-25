@@ -7,11 +7,6 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -28,41 +23,147 @@
   color: #61dafb;
 }
 
-
-
 /* 
 fix fonts pls. below does not work but font-size works
 */
 
 :root {
     font-family: 'HankenGrotesk', sans-serif;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,181,181,1) 90%);
+
 }
 
+/* ---------------------------- NAVBAR -----------------------------*/
+
+.navbar{
+    background: rgb(255,181,181);
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    
+    transition: all .5s ease;
+
+}
+
+.menu li{   
+    display: inline-block;
+}
+
+.menu li a{
+    width: 8rem;
+    display: block;
+    text-decoration: none;
+    color: darkslategray;
+    padding: 1rem;
+    transition: .3s;
+    font-size: 1rem;
+    text-align: middle; 
+    background-color: white; 
+    font-weight: bold;
+}
+
+.menu li .nav1{
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.menu li .nav3 {
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.menu li a:hover{
+    background-color: rgb(255,181,181);
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* ---------------------------- ABOUT -----------------------------*/
+
 .about {
-    background-color: antiquewhite;
+    
     padding: 1rem 1rem 1rem 1rem; 
     overflow: hidden;
 }
 
-.about-flex {
-    display:flex;
-    padding: 5rem 0rem 5rem 0rem;
-    background-color:whitesmoke; /* ----- temporary -----  */
+.about-flex { 
+    text-align: middle; 
 }
 
+
+/* if width is too small, wrap and make text alignment center */
+@media(min-width: 50rem) { 
+    .about-flex {
+        display:flex;
+        padding: 3rem 0rem 3rem 0rem;
+        
+        max-width: 100vw;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        text-align:right;
+    }
+
+    
+
+    
+}
+
+
 .about-text { /* flex child 1*/
+    font-weight: bold;
     padding: 2rem;
     flex: 1; /* flex ratio comparitively */
+    font-size: 1.2rem;
 }
 
 .about-text h1 {
     color:darkslategray;
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 0rem;
 }
 
-.about-model { /* flex child 2 */
-    background-color: pink;
+#canvas {
+    background: null;
+}
+
+.about-model { /* flex child 2: model */
+    /* background-color: pink; */
     padding: 2rem;
     flex: 1;
+    width:50vw;
+    height: 70vh;
+    max-width: 50%;
+    margin: auto;
+    
 }
+
+@media(min-width: 50rem) { 
+    .about-model {
+        height: 40vh;
+        width: 100vw;
+    }
+
+}
+
+
+/* ---------------------------- PROJECTS -----------------------------*/
+
+.projects {
+    padding: 10rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,181,181,1) 100%);
+}
+
+.projects h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: darkslategray;
+}
+
+
+
+
