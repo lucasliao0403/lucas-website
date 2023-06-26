@@ -14,7 +14,13 @@ export default function Hero() {
                     {/* <Tilt> */}
                         <h1 className='name'> Lucas Liao </h1>
                     {/* </Tilt> */}
-                    <p className = 'description'> ya mudda </p>
+                    <p className = 'description'> 
+                    <li> <a> Front-End Developer </a> </li> 
+                    <li> <a> Producer </a> </li>
+                    <li> <a> Mother </a> </li>
+                    <li> <a> President </a> </li>
+                    
+                     </p>
                 </div>
                 <div className="hero-model">
                     <ModelCanvas/>

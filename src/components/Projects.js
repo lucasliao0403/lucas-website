@@ -8,7 +8,7 @@ import {projects} from "../constants";
 
 const ProjectCard = ({title, description, img}) => {
 
-    console.log(img);
+    // console.log(img);
     var a = './breatheEasy.png';
    return (
     <motion.div
@@ -40,7 +40,7 @@ export default function Projects() {
 
     return (
         <div className="projects">
-            <h1>Projects</h1>
+            <h1>projects</h1>
             <div className="projects-flex">
                 {projects.map((project) => (
                     <ProjectCard title={project.title} description={project.description} img={project.img}/>             
