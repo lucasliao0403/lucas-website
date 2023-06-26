@@ -28,12 +28,19 @@ fix fonts pls. below does not work but font-size works
 */
 
 :root {
+
+    
+
     font-family: 'HankenGrotesk', sans-serif;
 
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,181,181,1) 90%);
 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 /* ---------------------------- NAVBAR -----------------------------*/
 
@@ -47,11 +54,14 @@ fix fonts pls. below does not work but font-size works
     padding: 1rem;
     
     transition: all .5s ease;
+    
 
 }
 
 .menu li{   
     display: inline-block;
+    margin: 1rem 1rem;
+    
 }
 
 .menu li a{
@@ -65,15 +75,11 @@ fix fonts pls. below does not work but font-size works
     text-align: middle; 
     background-color: white; 
     font-weight: bold;
+    border-radius: 1.5rem;
+    
 }
 
-.menu li .nav1{
-    border-radius: 1.5rem 0 0 1.5rem;
-}
 
-.menu li .nav3 {
-    border-radius: 0 1.5rem 1.5rem 0;
-}
 
 .menu li a:hover{
     background-color: rgb(255,181,181);
@@ -81,22 +87,24 @@ fix fonts pls. below does not work but font-size works
     font-size: 1.5rem;
 }
 
-/* ---------------------------- ABOUT -----------------------------*/
+/* ---------------------------- hero -----------------------------*/
 
-.about {
+.hero {
     
-    padding: 1rem 1rem 1rem 1rem; 
     overflow: hidden;
 }
 
-.about-flex { 
+.hero-flex { 
     text-align: middle; 
 }
 
 
 /* if width is too small, wrap and make text alignment center */
 @media(min-width: 50rem) { 
-    .about-flex {
+    .hero {
+        padding: 5rem;
+    }
+    .hero-flex {
         display:flex;
         padding: 3rem 0rem 3rem 0rem;
         
@@ -113,14 +121,14 @@ fix fonts pls. below does not work but font-size works
 }
 
 
-.about-text { /* flex child 1*/
+.hero-text { /* flex child 1*/
     font-weight: bold;
     padding: 2rem;
     flex: 1; /* flex ratio comparitively */
     font-size: 1.2rem;
 }
 
-.about-text h1 {
+.hero-text h1 {
     color:darkslategray;
     font-size: 5rem;
     padding: 0rem;
@@ -130,9 +138,9 @@ fix fonts pls. below does not work but font-size works
     background: null;
 }
 
-.about-model { /* flex child 2: model */
+.hero-model { /* flex child 2: model */
     /* background-color: pink; */
-    padding: 2rem;
+    padding: 1rem;
     flex: 1;
     width:50vw;
     height: 70vh;
@@ -141,10 +149,14 @@ fix fonts pls. below does not work but font-size works
     
 }
 
-@media(min-width: 50rem) { 
-    .about-model {
+@media(max-width: 50rem) { 
+    .hero {
+        padding: 0rem;
+    }
+    .hero-model {
         height: 40vh;
         width: 100vw;
+        /* background-color: green; */
     }
 
 }
@@ -153,7 +165,7 @@ fix fonts pls. below does not work but font-size works
 /* ---------------------------- PROJECTS -----------------------------*/
 
 .projects {
-    padding: 10rem;
+    padding: 4rem;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(255,181,181,1) 100%);
 }
@@ -163,6 +175,41 @@ fix fonts pls. below does not work but font-size works
     font-size: 3rem;
     color: darkslategray;
 }
+
+.projects-flex{
+    display:flex;
+    flex-wrap: wrap;
+    /* gap: 2rem; */
+    justify-content: space-around;
+    row-gap: 5rem;
+}
+
+.project-card {
+    width: 600px;
+    background-color: rgb(255,181,181);
+    border-radius: 3rem;
+    padding: 3rem;
+    /* filter: drop-shadow(0 0 0.5rem rgb(255,181,181)); */
+    /* border-style:solid; */
+    /* border-width: 1px; */
+    flex:1;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,181,181,1) 100%);
+
+}
+
+
+.project-card h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.project-card p {
+    font-size: 1rem;
+}
+
+
 
 
 
