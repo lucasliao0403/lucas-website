@@ -2,28 +2,23 @@
 
 import React, { useRef, Suspense, useEffect, useState,  } from "react";
 import { Canvas , useFrame} from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, RoundedBox, Sky } from "@react-three/drei";
 import * as THREE from 'three'
 import {motion, useScroll} from "framer-motion";
 
 
 import CanvasLoader from "./Loader.js";
 
+
 const Box = () => {
-    const boxRef = useRef();
-  
-    useFrame(() => {
-      boxRef.current.rotation.y += 0.01;
-    });
-  
     return (
-      <mesh ref={boxRef} rotation-x={Math.PI * 0.25} rotation-y={Math.PI * 0.25}>
-        <boxBufferGeometry args={[2, 2, 2]} />
-        <meshStandardMaterial color={"red"} />
+      <mesh rotation-x={Math.PI * -0.5}>
+        <planeBufferGeometry args={[20, 20]} />
+        <meshStandardMaterial color={"green"} />
+        
       </mesh>
     );
   };
-
 
 export function Model() {
 
@@ -34,12 +29,12 @@ export function Model() {
 
     // rotation doesnt work lol:
 
-    useFrame(() => { 
-        model.scene.rotation.y += 0.05;
-        console.log("moving")
+    // useFrame(() => { 
+    //     model.scene.rotation.y += 0.05;
+    //     console.log("moving")
 
-        // model.scene.rotation.z += 0.03;
-      })
+    //     // model.scene.rotation.z += 0.03;
+    //   })
 
 
     // console.log(model);
@@ -52,7 +47,7 @@ export function Model() {
 
             <primitive
             object={model.scene}
-            position = {[0.25,-1.8,0]} // move center of cat
+            position = {[0.25,-3,0]} // move center of cat
             />
 
         </mesh>
@@ -81,8 +76,16 @@ export function ModelCanvas() {
                         maxPolarAngle={Math.PI/2 }
                         minPolarAngle={Math.PI/2}
                         enableRotate={true}
-                        minDistance={15}
+                        minDistance={1}
                         maxDistance={50}
+                    />
+                    <RoundedBox args={[10, 100, 10]} position = {[0.25,-53,0]} radius={0.1}>
+                        <meshLambertMaterial attach="material" color={"green"} />
+                    </RoundedBox>
+
+                    <Sky 
+                    distance={45}
+                    mieCoefficient = {0.001}
                     />
 
                     <Model/>

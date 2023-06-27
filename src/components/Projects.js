@@ -20,7 +20,7 @@ const ProjectCard = ({title, description, img}) => {
         className = "project-card"
         options={{
             reverse:true,
-            max:5,
+            max:50,
         }}
           >
             <img src={require("../assets/breatheEasy.png")}/>

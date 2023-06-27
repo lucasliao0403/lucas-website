@@ -1,5 +1,6 @@
 import React from 'react';
 import {motion, useScroll} from "framer-motion";
+import {Tilt} from "react-tilt";
 
 
 export default function About() {
@@ -23,12 +24,13 @@ export default function About() {
                         contact me - I'd love to talk!
                     </p>
                 </div>
-
+                <Tilt>
                 <div className="about-img">
                     <img src = {require("../assets/profilepic.png")}/>
                 </div>
+                </Tilt>
             </div>
-            
+                
         </motion.div>
     );
 }
