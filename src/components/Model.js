@@ -76,7 +76,7 @@ export function ModelCanvas() {
                         maxPolarAngle={Math.PI/2 }
                         minPolarAngle={Math.PI/2}
                         enableRotate={true}
-                        minDistance={1}
+                        minDistance={15}
                         maxDistance={50}
                     />
                     <RoundedBox args={[10, 100, 10]} position = {[0.25,-53,0]} radius={0.1}>

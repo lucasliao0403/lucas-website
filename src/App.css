@@ -23,9 +23,6 @@
   color: #61dafb;
 }
 
-/* 
-fix fonts pls. below does not work but font-size works
-*/
 
 :root {
 
@@ -54,31 +51,29 @@ html {
     list-style-type: none;
     margin: 0;
     padding: 1rem;
-    
     transition: all .5s ease;
-    
-
+    display: flex;
+    flex-direction: row;
 }
 
 .menu li{   
     cursor: pointer;
-    display: inline-block;
     margin: 1rem 1rem;
-    
+    flex: 1;
+    width: 25vw;
 }
 
 .menu li a{
-    width: 8rem;
-    display: block;
     text-decoration: none;
     color: var(--darkgreen);
-    padding: 1rem;
+    padding: 1rem 5vw;
     transition: .3s;
     font-size: 1.2rem;
     text-align: middle; 
     background-color: white; 
     font-weight: bold;
     border-radius: 1.5rem;
+
     
 }
 
@@ -109,19 +104,11 @@ html {
 
 /* if width is too small, wrap and make text alignment center */
 @media(min-width: 50rem) { 
-    /* .hero {
-        padding: 0 2rem 0 0;
-    } */
     .hero-flex {
         padding: 2rem 0rem 2rem 0rem;
         justify-content: center;
         align-items: center;
-
     }
-
-    
-
-    
 }
 
 
@@ -134,7 +121,7 @@ html {
 
 .hero-text h1 {
     color:var(--darkgreen);
-    font-size: 7rem;
+    font-size: 5rem;
     text-decoration: underline;
     text-decoration-color: var(--pink);
     text-decoration-thickness: 8px;
@@ -201,15 +188,13 @@ html {
 }
 
 .description {
-    font-size: 1.8rem;
+    font-size: 2rem;
     flex: 1;
     text-align: right;
     margin-right: 2rem;
     padding: 0.3rem 0 0 0;
     color: var(--darkgreen);
     font-weight: bold;
-    
-
 }
 
 /* ---------------------------- ABOUT -----------------------------*/
@@ -220,32 +205,34 @@ html {
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    
 }
 
 .about-flex {
     display: flex;
     flex-wrap: wrap;
-    padding: 0rem 1rem;
+    padding: 0rem 3rem;
 }
 
-.about-text {
+.about-desc {
     flex: 1;
     text-align: left;
-    padding: 0rem 3rem;
+    padding: 0rem 4rem;
+    min-width: 400px;
 }
 
 .about-img {
     flex: 1;
+    text-align: right;
 }
 
 .about-img img {
     height: 400px;
     width: 400px;
     border-radius: 5rem;
+    
 }
 
-.about h1{
+.about-desc h1{
 
     text-decoration:underline;
     text-decoration-color: var(--pink);
@@ -253,13 +240,34 @@ html {
     
 }
 
-.about p{
+.about-desc p{
     font-size: 1.5rem;
-    max-height: 10rem;
 }
 
-.about p span{
+.about-desc p span{
     font-weight: bold;
+}
+
+.about-icons {
+    margin: auto;
+}
+
+.about-icons img {
+    width: 100px;
+}
+
+@media (max-width: 1102px) {
+    .about-img {
+        text-align: center;
+    }
+    .about-img img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .about-flex {
+        padding: 0rem 2rem;
+    }
     
 }
 
@@ -321,8 +329,301 @@ html {
     font-size: 1rem;
 }
 
+/* ---------------------------- FOOTER -----------------------------*/
+
+.footer {
+    background-color: var(--darkgreen);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+
+.email {
+    text-align: right;
+}
+
+.email a{
+    /* background-color: var(--pink); */
+    color: white;
+    text-decoration-color: var(--pink);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: all .5s ease;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.email a:hover {
+    color: var(--darkgreen);
+    text-decoration-color: white;
+    background-color: var(--pink);
+}
+
+.return {
+    /* background-color: var(--pink); */
+    font-size: 1.5rem;
+    margin: auto;
+    text-align: middle;
+    cursor: pointer;
+    color: var(--darkgreen);
+    background-color: var(--pink);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-weight:normal;
+    transition: all .5s ease;
+    /* text-decoration: underline;
+    text-decoration-color: white; */
+    font-weight: bold;
+}
+
+.return:hover{
+    background-color: var(--darkgreen);
+    font-size: 1.7rem;
+    color: white;
+    /* text-decoration-color: var(--pink); */
+}
 
 
 
 
 
+/* __________________________________ MOBILE __________________________________ */ 
+
+@media (max-width: 480px) {
+    
+    
+    .menu li a{
+        padding: .8rem 3vw;
+        font-size: 1rem;
+    }
+    
+    
+    .menu li a:hover{
+        font-size: 1rem;
+    }
+    
+    /* ---------------------------- HERO -----------------------------*/
+    
+    .hero {
+        padding: 2rem 2rem 2rem 2rem;
+    }
+    
+    .hero-flex { 
+        display:flex;
+        flex-wrap: wrap;
+        text-align: middle; 
+        /* padding-bottom: 2rem; */
+    }
+    
+    #canvas {
+        width: 80px;
+    }
+    
+    
+    .hero-text { /* flex child 1*/
+        padding: 2rem;
+        flex: 1; /* flex ratio comparitively */
+        list-style-type: none;
+        white-space: nowrap;
+    }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        margin-left: 0rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .hero-model { /* flex child 2: model */
+        background-color: var(--pink);
+        border-radius: 3rem;
+        padding: 1rem;
+        flex: 2;
+        width: 100%;
+        height: 70vh;
+        margin: auto;
+        
+    }
+    
+    .hero-model Canvas{ /* flex child 2: model */
+        width: 100vw;
+        border-radius: 2rem;
+    }
+    
+    .hero {
+        padding: 0 0 1rem 0;
+    }
+    .hero-model {
+        height: 40vh;
+        max-width: 80%;
+        min-width: 80%;
+        /* background-color: green; */
+    }
+
+    .icons{
+        text-align: left;
+    }
+    
+    .description {
+        padding-left: 3rem;
+        text-align: left;
+    }
+    
+    .hero-text-flex {
+        display: flex;
+    }
+    
+    .icons {
+        padding: .3rem;
+    }
+    
+    .icons img {
+        width: 50px;
+        padding: 0 0.3rem;
+        flex: 1;
+    }
+    
+    .description {
+        font-size: 1rem;
+        padding: 1rem 0 0 0;
+        /* text-align: right; */
+    }
+    
+    /* ---------------------------- ABOUT -----------------------------*/
+    
+    .about {
+        padding: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .about-flex {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0rem 0rem;
+    }
+    
+    .about-desc {
+        flex: 1;
+        text-align: left;
+        padding: 0rem .5rem;
+        min-width: 150px;
+    }
+    
+    .about-img {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .about-img img {
+        height: 200px;
+        width: 200px;
+        border-radius: 6rem;
+        padding: 1rem;
+        
+    }
+    
+    .about-desc h1{
+    
+        text-decoration:underline;
+        font-size: 2rem;
+        
+    }
+    
+    .about-desc p{
+        font-size: 1rem;
+    }
+    
+    .about-desc p span{
+        font-weight: bold;
+    }
+    
+    .about-icons {
+        margin: auto;
+    }
+    
+    .about-icons img {
+        width: 50px;
+    }
+    
+    .about-img {
+        text-align: center;
+    }
+
+        
+    
+    
+    
+    /* ---------------------------- PROJECTS -----------------------------*/
+    
+    .projects {
+        padding: 0 0 2rem 0; 
+    }
+    
+    .projects h1{
+        font-size: 2rem;
+    }
+    
+    .projects-flex{
+        display:flex;
+        flex-wrap: wrap;
+        /* gap: 2rem; */
+        justify-content: space-around;
+        row-gap: 2rem;
+    }
+    
+    .project-card {
+        width: 200px;
+        padding: 2rem;
+    }
+    
+    .project-card img {
+        width: 200px;
+        height: 100px;
+        border-radius: 1rem;
+        border-width: 3px;
+    }
+    
+    .project-card h1 {
+        font-size: 1rem;
+    }
+    
+    .project-card p {
+        font-size: .8rem;
+    }
+    
+    /* ---------------------------- FOOTER -----------------------------*/
+    
+    .footer {
+        background-color: var(--darkgreen);
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+    }
+    
+    .email {
+        text-align: right;
+    }
+    
+    .email a{
+        font-size: 1rem;
+        margin: auto;
+        padding: none;
+        /* border-radius: 1rem; */
+    }
+    
+    .return {
+        /* background-color: var(--pink); */
+        font-size: 1rem;
+        margin: auto;
+        text-align: middle;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+
+    }
+
+
+}

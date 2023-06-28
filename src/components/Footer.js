@@ -1,9 +1,17 @@
 import React from 'react';
+import {Link} from 'react-scroll';
 
 function Footer() {
     return (
         <div className="footer">
-            <div className="email"> email </div>
+            <div className="return">
+                <Link activeClass="active"  spy to="navbar"> 
+                    back to top
+                </Link>
+            </div>
+            <div className="email"> 
+                <a href = "mailto: lucasliao0403@gmail.com">lucasliao0403@gmail.com</a>
+            </div>
         </div>
     );
 }
