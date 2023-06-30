@@ -83,10 +83,10 @@ export function ModelCanvas() {
                         <meshLambertMaterial attach="material" color={"green"} />
                     </RoundedBox>
 
-                    <Sky 
+                    {/* <Sky 
                     distance={45}
                     mieCoefficient = {0.001}
-                    />
+                    /> */}
 
                     <Model/>
 

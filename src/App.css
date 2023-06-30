@@ -45,6 +45,8 @@ html {
 
 .navbar{
     background: var(--darkgreen);
+    position: fixed;
+    width: 100vw;
 }
 
 .menu {
@@ -89,7 +91,7 @@ html {
 
 .hero {
     overflow: hidden;
-    padding: 0rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     background: rgb(255,255,255);
     /* background: linear-gradient(0deg, rgba(255,255,255,1) 50%, var(--darkgreen) 90%); */
 }
@@ -141,7 +143,7 @@ html {
     padding: 1rem;
     flex: 2;
     width:80vw;
-    height: 70vh;
+    height: 80vh;
     max-width: 50%;
     margin: auto;
     
@@ -153,6 +155,7 @@ html {
 }
 
 @media(max-width: 50rem) { 
+
     .hero {
         padding: 0rem;
     }
@@ -406,7 +409,7 @@ html {
     /* ---------------------------- HERO -----------------------------*/
     
     .hero {
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 8rem 2rem 8rem 2rem;
     }
     
     .hero-flex { 
@@ -422,7 +425,7 @@ html {
     
     
     .hero-text { /* flex child 1*/
-        padding: 2rem;
+        padding: 0rem;
         flex: 1; /* flex ratio comparitively */
         list-style-type: none;
         white-space: nowrap;
@@ -452,9 +455,6 @@ html {
         border-radius: 2rem;
     }
     
-    .hero {
-        padding: 0 0 1rem 0;
-    }
     .hero-model {
         height: 40vh;
         max-width: 80%;

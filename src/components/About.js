@@ -20,15 +20,16 @@ export default function About() {
                         Markham, Ontario with a passion for crafting 
                         visually appealing websites. Combining creativity with 
                         technical skills, I specialize in developing interactive web 
-                        applications using React. Feel free to explore my page 
+                        applications using React and Three.js. Feel free to explore my page 
                         and don't hesitate to contact me - I'd love to talk!
                     </p>
 
                 </div>
-                
+
                 <div className="about-icons">
                     <Tilt> <img src={require("../assets/react.png")}/> </Tilt>
-                    <Tilt> <img src={require("../assets/js.png")}/> </Tilt>
+                    {/* <Tilt> <img src={require("../assets/js.png")}/> </Tilt> */}
+                    <Tilt> <img src={require("../assets/threejs.png")}/> </Tilt>
                 </div>
                 
                 <div className="about-img">

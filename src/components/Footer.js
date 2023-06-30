@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div className="footer">
             <div className="return">
-                <Link activeClass="active"  spy to="navbar"> 
+                <Link activeClass="active"  spy to="hero"> 
                     back to top
                 </Link>
             </div>
