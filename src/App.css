@@ -46,6 +46,7 @@ html {
 .navbar{
     background: var(--darkgreen);
     position: fixed;
+    z-index: 100;
     width: 100vw;
 }
 
@@ -255,8 +256,16 @@ html {
     margin: auto;
 }
 
+.about-icons div {
+    border-radius: 2rem;
+    padding: 2px;
+}
+
 .about-icons img {
     width: 100px;
+    background-color: var(--pink); 
+    border-radius: 1rem;
+    
 }
 
 @media (max-width: 1102px) {
@@ -464,6 +473,7 @@ html {
 
     .icons{
         text-align: left;
+        padding: .3rem;
     }
     
     .description {
@@ -473,10 +483,6 @@ html {
     
     .hero-text-flex {
         display: flex;
-    }
-    
-    .icons {
-        padding: .3rem;
     }
     
     .icons img {
@@ -546,6 +552,7 @@ html {
     
     .about-icons img {
         width: 50px;
+        border-radius: .7rem;
     }
     
     .about-img {

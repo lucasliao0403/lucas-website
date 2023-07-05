@@ -27,9 +27,14 @@ export default function About() {
                 </div>
 
                 <div className="about-icons">
-                    <Tilt> <img src={require("../assets/react.png")}/> </Tilt>
-                    {/* <Tilt> <img src={require("../assets/js.png")}/> </Tilt> */}
-                    <Tilt> <img src={require("../assets/threejs.png")}/> </Tilt>
+
+                    <div> <Tilt
+                    options={{
+                        reverse: true,
+                    }}
+                    > <img src={require("../assets/react.png")}/> </Tilt> </div>
+                    
+                    <div> <Tilt> <img src={require("../assets/threejs.png")}/> </Tilt> </div>
                 </div>
                 
                 <div className="about-img">
