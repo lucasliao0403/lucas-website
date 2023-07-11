@@ -9,7 +9,8 @@ export const projects = [
         title:"Cafe Site",
         description:"An example multipage web app for a cafe featuring all essential information. Built in NextJS and React.",
         img: 0,
-        github: "https://github.com/lucasliao0403/lucas-website",
+        github: "https://github.com/lucasliao0403/cafe-site",
+        link:"https://cafe-site-pi.vercel.app",
         
     },
 
@@ -18,7 +19,7 @@ export const projects = [
         description:"This current portfolio site. Created using React and Three.js.",
         img: 1,
         github: "https://github.com/lucasliao0403/lucas-website",
-        link:"https://liaolucas.com"
+        link:"https://liaolucas.com",
     },
     
     {

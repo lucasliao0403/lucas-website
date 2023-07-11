@@ -8,44 +8,43 @@ import {projects} from "../constants";
 
 const ProjectCard = ({title, description, img, github, link}) => {
 
-    // console.log(img);
     var a = './breatheEasy.png';
-   return (
-    <motion.div
-        initial={{ x: 0 , y: 0, opacity: -1}}
-        whileInView={{ x: 0 , y: 0, opacity: 1}}
-        transition={{ duration: 1, delay: 0}}
-    >
-        <Tilt
-        className="project-card"
-        options={{
-            reverse: true,
-            max: 5,
-        }}
-    > 
-            <a href={link}>
-                {
-                img===0 ? 
-                    <img src={require('../assets/cafe.png')}/> :
-                img===1?
-                    <img src={require('../assets/portfoliosite.png')}/> :
-                <img src={require('../assets/breatheEasy.png')}/> 
-                }
-            </a>   
-            
-            <h1>{title}</h1>
-            <div className="project-desc">
-                <div className="project-desc-text">
-                    <p>{description} </p> 
+    return (
+        <motion.div
+            initial={{ x: 0 , y: 0, opacity: -1}}
+            whileInView={{ x: 0 , y: 0, opacity: 1}}
+            transition={{ duration: 1, delay: 0}}
+        >
+            <Tilt
+            className="project-card"
+            options={{
+                reverse: true,
+                max: 5,
+            }}
+        > 
+                <a href={link}>
+                    {
+                    img===0 ? 
+                        <img src={require('../assets/cafe.png')}/> :
+                    img===1?
+                        <img src={require('../assets/portfoliosite.png')}/> :
+                    <img src={require('../assets/breatheEasy.png')}/> 
+                    }
+                </a>   
+                
+                <a href={link}> <h1>{title}</h1> </a>
+                <div className="project-desc">
+                    <div className="project-desc-text">
+                        <p>{description} </p> 
+                    </div>
+                    <div className="project-icons"> 
+                        <a href={github}><img src={require("../assets/github.png")}/></a>
+                    </div>
                 </div>
-                <div className="project-icons"> 
-                    <a href={github}><img src={require("../assets/github.png")}/></a>
-                </div>
-            </div>
-            
-        </Tilt>
+                
+            </Tilt>
 
-    </motion.div>
+        </motion.div>
     
    )
 }

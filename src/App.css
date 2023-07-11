@@ -289,7 +289,7 @@ html {
 .projects {
     padding: 4rem;
     background: rgb(255,255,255);
-
+    color: var(--darkgreen);
 }
 
 .projects h1{
