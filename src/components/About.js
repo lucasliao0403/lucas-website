@@ -20,21 +20,27 @@ export default function About() {
                         Markham, Ontario with a passion for crafting 
                         visually appealing websites. Combining creativity with 
                         technical skills, I specialize in developing interactive web 
-                        applications using React and Three.js. Feel free to explore my page 
+                        applications using NextJS and React, as well as experience in Three.js. Feel free to explore my page 
                         and don't hesitate to contact me - I'd love to talk!
                     </p>
 
                 </div>
 
                 <div className="about-icons">
+                    <div> 
+                        <Tilt
+                            options={{
+                                reverse: true,
+                                
+                            }}
+                        > 
+                            <img src={require("../assets/react.png")}/> 
+                        </Tilt> 
+                    </div>
 
-                    <div> <Tilt
-                    options={{
-                        reverse: true,
-                    }}
-                    > <img src={require("../assets/react.png")}/> </Tilt> </div>
-                    
+                    <div> <Tilt> <img src={require("../assets/nextjs.png")}/> </Tilt> </div>
                     <div> <Tilt> <img src={require("../assets/threejs.png")}/> </Tilt> </div>
+                    
                 </div>
                 
                 <div className="about-img">
