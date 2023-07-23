@@ -8,7 +8,7 @@ import {projects} from "../constants";
 
 const ProjectCard = ({title, description, img, github, link}) => {
 
-    var a = './breatheEasy.png';
+    
     return (
         <motion.div
             initial={{ x: 0 , y: 0, opacity: -1}}

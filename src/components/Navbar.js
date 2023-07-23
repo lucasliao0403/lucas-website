@@ -11,7 +11,7 @@ function Navbar() {
                 
                 <li> <Link activeClass="active"  spy to="about"> about </Link> </li>
                 <li> <Link activeClass="active"  spy to="projects"> projects </Link></li>
-                <li> <Link activeClass="active"  spy to=""> contact </Link></li>
+                <li> <Link activeClass="active"  spy to="footer"> contact </Link></li>
                 
 
             </ul>
