@@ -7,6 +7,8 @@ import Projects from './components/Projects.js';
 import Navbar from './components/Navbar.js';
 import Footer from './components/Footer';
 
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
         <About/>
         <Projects/>
         <Footer/>
+
+        <Analytics/>
     </div>
   );
 }
