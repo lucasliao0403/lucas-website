@@ -6,6 +6,14 @@
 
 export const projects = [
     {
+        title:"Nameify", 
+        description:"Nameify uses Spotify's Audio Features to analyze track properties such as danceability, energy, and valence. The properties are normalized through a percentile distribution and a sigmoid transform, then passed into GPT-3.5 along with the prompt to generate playlist names.",
+        img: 3,
+        github: "https://github.com/lucasliao0403/nameify",
+        link:"nameify.vercel.app/"
+    },
+
+    {
         title:"Cafe Site",
         description:"An example multipage web app for a cafe featuring all essential information. Built in NextJS and React.",
         img: 0,
@@ -28,4 +36,5 @@ export const projects = [
         img: 2,
         github: "https://github.com/YeIIcw/breatheEasy",
     },
+
 ]
