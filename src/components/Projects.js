@@ -14,6 +14,7 @@ const ProjectCard = ({title, description, img, github, link}) => {
             initial={{ x: 0 , y: 0, opacity: -1}}
             whileInView={{ x: 0 , y: 0, opacity: 1}}
             transition={{ duration: 1, delay: 0}}
+            className="project-card-motion"
         >
             <Tilt
             className="project-card"

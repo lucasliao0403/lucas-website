@@ -10,7 +10,7 @@ export const projects = [
         description:"Nameify uses Spotify's Audio Features to analyze track properties such as danceability, energy, and valence. The properties are normalized through a percentile distribution and a sigmoid transform, then passed into GPT-3.5 along with the prompt to generate playlist names.",
         img: 3,
         github: "https://github.com/lucasliao0403/nameify",
-        link:"nameify.vercel.app/"
+        link:"https://nameify.vercel.app/"
     },
 
     {

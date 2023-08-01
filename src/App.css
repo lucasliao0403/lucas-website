@@ -311,6 +311,8 @@ html {
 .project-card {
     width: 500px;
     background-color: var(--pink);
+    color: black;
+    filter: drop-shadow(0 0 10px rgba(47, 79, 79, .2));
     border-radius: 3rem;
     padding: 3rem;
     /* filter: drop-shadow(0 0 0.5rem var(--pink)); */
@@ -320,8 +322,12 @@ html {
     background: var(--pink);
 }
 
+.project-card-motion {
+    border: 3px solid rgba(var(--darkgreen), 1);
+}
+
 .project-card img {
-    object-fit: contain;
+    object-fit: cover;
     width: 500px;
     height: 250px;
     border-radius: 3rem;
