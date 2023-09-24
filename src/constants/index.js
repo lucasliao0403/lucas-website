@@ -6,6 +6,13 @@
 
 export const projects = [
     {
+        title:"AI Responder", 
+        description:"An AI-powered 911 responder application and dashboard. Built to optimize slow emergency response times, AI Responder answers first and records crucial data before a human responder is able to intercept and take control of a response.",
+        img: 4,
+        github: "https://github.com/lucasliao0403/ai-responder",
+        link:""
+    },
+    {
         title:"Nameify", 
         description:"Nameify uses Spotify's Audio Features to analyze track properties such as danceability, energy, and valence. The properties are normalized through a percentile distribution and a sigmoid transform, then passed into GPT-3.5 along with the prompt to generate playlist names.",
         img: 3,

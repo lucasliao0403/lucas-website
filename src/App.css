@@ -311,13 +311,10 @@ html {
 .project-card {
     width: 500px;
     background-color: var(--pink);
-    color: black;
+    /* color: rgba(var(--darkgreen), 1); */
     filter: drop-shadow(0 0 10px rgba(47, 79, 79, .2));
     border-radius: 3rem;
     padding: 3rem;
-    /* filter: drop-shadow(0 0 0.5rem var(--pink)); */
-    /* border-style:solid; */
-    /* border-width: 1px; */
     flex:1;
     background: var(--pink);
 }
@@ -329,8 +326,8 @@ html {
 .project-card img {
     object-fit: cover;
     width: 500px;
-    height: 250px;
-    border-radius: 3rem;
+    height: 300px;
+    border-radius: 5px;
     border-style: inset;
     border-color: var(--darkgreen);
     border-width: 5px;
@@ -342,16 +339,19 @@ html {
     font-weight: bold;
     font-size: 1.7rem;
     text-decoration: underline;
+    color: black;
 }
 
 .project-card p {
     font-size: 1rem;
-    font-weight: 500
+    font-weight: 400;
+    color: black;
 }
 
 .project-desc {
     display: flex;
     text-align: left;
+    
 }
 
 .project-desc-text {

@@ -31,7 +31,9 @@ const ProjectCard = ({title, description, img, github, link}) => {
                         <img src={require('../assets/portfoliosite.png')}/> :
                     img===2?
                     <img src={require('../assets/breatheEasy.png')}/> :
-                    <img src={require('../assets/nameify.png')}/> 
+                    img===3?
+                    <img src={require('../assets/nameify.png')}/> :
+                    <img src={require('../assets/airesponder.png')}/>
                     }
                 </a>   
                 
