@@ -16,7 +16,7 @@ export default function About() {
                         <h1>about me</h1> 
                         <p>
                             <span>Hi! </span> 
-                            I'm a 17 year old web developer from 
+                            I'm a web developer from 
                             Markham, Ontario with a passion for crafting 
                             visually appealing websites. Combining creativity with 
                             technical skills, I specialize in developing interactive web 
