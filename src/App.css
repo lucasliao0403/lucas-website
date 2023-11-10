@@ -359,8 +359,9 @@ html {
 }
 
 .project-icons {
-    flex: 1;
+    /* flex: 1; */
     height: 75px;
+    width: 75px;
     align-items: center;
 }
 
