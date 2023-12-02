@@ -6,6 +6,13 @@
 
 export const projects = [
     {
+        title:"Slime Scholars", 
+        description:"Educational gacha webgame inspired by gamelike elements in Khan Academy and Prodigy. Built with MERN stack. Worked on UI and frontend along with team of UW students.",
+        img: 5,
+        github: "https://github.com/SlimeScholars/slime-scholars",
+        link:"https://www.slimescholars.com"
+    },
+    {
         title:"AI Responder", 
         description:"An AI-powered 911 responder application and dashboard. Built to optimize slow emergency response times, AI Responder answers first and records crucial data before a human responder is able to intercept and take control of a response.",
         img: 4,
