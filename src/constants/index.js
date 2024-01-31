@@ -7,7 +7,7 @@
 export const projects = [
     {
         title:"Slime Scholars", 
-        description:"Educational gacha webgame inspired by gamelike elements in Khan Academy and Prodigy. Built with MERN stack. Worked on UI and frontend along with team of UW students.",
+        description:"Educational gacha webgame inspired by gamelike elements in Khan Academy and Prodigy, built with Mongoose, Next.js, React and Node.js. Worked on UI and frontend along with team of UW students.",
         img: 5,
         github: "https://github.com/SlimeScholars/slime-scholars",
         link:"https://www.slimescholars.com"
