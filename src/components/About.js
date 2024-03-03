@@ -16,11 +16,11 @@ export default function About() {
                         <h1>about me</h1> 
                         <p>
                             <span>Hi! </span> 
-                            I'm a web developer from 
-                            Markham, Ontario with a passion for crafting 
-                            visually appealing websites. Combining creativity with 
-                            technical skills, I specialize in developing interactive web 
-                            applications using NextJS and React, as well as experience in Three.js. Feel free to explore my page 
+                            I'm a student developer from 
+                            Markham, Ontario, and I love building software and working with new technologies.
+                            I specialize in developing interactive web 
+                            applications using NextJS and React, and I'm always eager to learn.
+                            Feel free to explore my page 
                             and don't hesitate to contact me - I'd love to talk!
                         </p>
 
